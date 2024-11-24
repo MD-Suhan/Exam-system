@@ -1,13 +1,21 @@
-
-  {
-    "hosting": {
-      "public": "public",
-      "rewrites": [
-        {
-          "source": "/**",
-          "destination": "/index.html"
-        }
-      ]
-    }
+{
+  "hosting": {
+    "public": "exam-system/public",  // Directory where your frontend files (HTML, CSS, JS) are located
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/**",
+        "destination": "/index.html"  // All routes are served by index.html for SPA routing
+      }
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run build"  // Run build before deploying functions
+    ]
   }
-  
+}
