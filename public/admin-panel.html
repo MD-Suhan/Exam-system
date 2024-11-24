@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+  <header>
+    <h1>Admin Panel</h1>
+    <button class="back-button" onclick="goBack()">Back</button>
+  </header>
+  <main>
+    <div class="admin-options">
+      <button id="manage-admins-btn" onclick="manageAdmins()">Manage Admins & Moderators</button>
+      <button id="manage-classes-btn" onclick="manageClasses()">Manage Classes & Exams</button>
+    </div>
+    <div id="content-area"></div>
+  
+  </main>
+  <div>
+    <h2>Add Class</h2>
+    <input type="text" id="class-name" placeholder="Class Name" />
+    <input type="text" id="class-image" placeholder="Image URL" />
+    <textarea id="class-description" placeholder="Class Description"></textarea>
+    <button id="add-class">Add Class</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Score</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your Score</h1>
+    <button class="back-button" onclick="goBack()">Back</button>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Exam Mark</th>
+          <th>Achieved Marks</th>
+          <th>Wrong Answers</th>
+          <th>Total Marks</th>
+        </tr>
+      </thead>
+      <tbody id="score-details"></tbody>
+    </table>
+  </main>
+  <div id="score-container">
+    <h1>Your Score</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Total Questions</th>
+          <th>Correct Answers</th>
+          <th>Wrong Answers</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="total-questions"></td>
+          <td id="correct-answers"></td>
+          <td id="wrong-answers"></td>
+          <td id="score"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="goBack()">Go Back</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
